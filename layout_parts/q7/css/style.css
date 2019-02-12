@@ -13,21 +13,14 @@
   margin-left: 50px;
 
 }
-.left-box{
+.top-box{
   width: 225px;
   box-sizing: border-box;
   float: left;
   margin-left: 50px;
 }
-.left-box:first-child{
+.top-box:first-child{
   margin-left: 0;
-}
-.right-box{
-  width: 225px;
-  box-sizing: border-box;
-  float: left;
-  margin-left: 50px;
-
 }
 
 

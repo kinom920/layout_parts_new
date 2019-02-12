@@ -7,19 +7,18 @@
   content: "";
   clear: both;
 }
-
 .contant{
   width: 900px;
   margin: 0 auto;
   padding:20px;
   background-color: #eff3f4;
 }
-.pic1{
+.pic-top{
   float: left;
   margin: 0 20px 10px 0;
 }
 
-.pic2{
+.pic-bottom{
   float: right;
   margin: 0 0 10px 20px;
 }
@@ -29,15 +28,3 @@
   line-height: 22px;
   word-break: break-all;
 }
-
-
-
-/* .contant-box1{
-  float: left;
-
-} */
-
-/* .contant-box2{
-  float: right;
-
-} */

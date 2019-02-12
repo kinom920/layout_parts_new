@@ -13,87 +13,70 @@
   font-weight: bold;
   font-size: 30px;
 }
-.east{
+
+.c-box{
   width: 100px;
   height: 100px;
-  background-color: #deae70;
   position: absolute;
+}
+
+.seventh{
+  background-color: #deae70;
   left: 40px;
   top: 200px;
   z-index: 7;
 }
 
-.west{
-  width: 100px;
-  height: 100px;
+.third{
   background-color: #d0ecea;
-  position: absolute;
   top: 200px;
   right: 40px;
   z-index: 3;
 }
 
-.south{
-  width: 100px;
-  height: 100px;
+.fifth{
   background-color: #9fd6d2;
-  position: absolute;
   bottom: 40px;
   right: 200px;
   z-index: 5;
 }
 
-.north{
-  width: 100px;
-  height: 100px;
+.first{
   background-color: #ffefd3;
-  position: absolute;
   top: 40px;
   right: 200px;
   z-index: 1;
 }
 
-.south-east{
-  width: 100px;
-  height: 100px;
+.sixth{
   background-color: #fffee4;
-  position: absolute;
   bottom: 120px;
   left: 120px;
   z-index: 6;
 }
 
-.south-west{
-  width: 100px;
-  height: 100px;
+.fourth{
   background-color: #8b7a5e;
-  position: absolute;
   top: 280px;
   right: 120px;
   z-index: 4;
 }
 
-.north-east{
-  width: 100px;
-  height: 100px;
+.eighth{
   background-color: #de70cf;
-  position: absolute;
   top: 120px;
   left: 120px;
   z-index: 8;
 }
 
-.north-west{
-  width: 100px;
-  height: 100px;
+.second{
   background-color: #7084de;
-  position: absolute;
   top: 120px;
   left: 280px;
   z-index: 2;
 }
 
-.left-top{
+.ninth{
   width: 100px;
   height: 100px;
   background-color: #2b69a3;
@@ -102,7 +85,7 @@
   top: 10px;
 }
 
-.north-east:after {
+.eighth:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,15 +94,4 @@
   background-color: #FFEFD3;
   content: "";
 }
-
-/* .north-east::before{
-  content:"";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background-color: #ffefd3;
-} */
-
 /* 回答はここに書いてね */

@@ -6,35 +6,30 @@
   margin-left: 0;
 }
 
-.btn-co{
+.btn-common{
   color: #FFF;
   cursor: pointer;
-  /* text-align: center; */
-  /* margin-left: 10px; */
   display: inline-block;
   background-color: #00bcd4;
 }
 
-.btn-er{
+.btn-error{
   color: #FFF;
   cursor: pointer;
-  /* text-align: center; */
   margin-left: 10px;
   display: inline-block;
   background-color: #ff4081;
 }
 
-.btn-di{
+.btn-disabled{
   color: #FFF;
-  /* text-align: center; */
   margin-left: 10px;
   display: inline-block;
   background-color: #e5e5e5;
 }
 
-.btn-sh{
+.btn-shadow{
   cursor: pointer;
-  /* text-align: center; */
   margin-left: 10px;
   display: inline-block;
   box-shadow: 0 1px 6px rgba(0,0,0,.12),
@@ -63,6 +58,28 @@
 }
 
 
+input{
+  outline: none;
+}
+
+
+input:focus {
+  box-shadow: 0 0 7px #00BCD4;
+}
+
+.ccc-box::after {
+  display: block;
+  position: absolute;
+  top: 714px;
+  right: 692px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
 .clearfix:after {
   display: block;
   content: "";
@@ -331,6 +348,15 @@ li {
 
 li {
   list-style: none;
+}
+
+.main-bottom-btn:active {
+  background-color: #FFF;
+  color: #00BCD4;
+}
+
+.input:focus {
+  box-shadow: 0 0 7px #00BCD4;
 }
 
 
