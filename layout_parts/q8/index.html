@@ -31,27 +31,27 @@
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
-            <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <p class="q8__title small-box">ー small ー</p>
+            <div class="btn-co small-text">common</div>
+            <div class="btn-er small-text">error</div>
+            <div class="btn-di small-text">disabled</div>
+            <div class="btn-sh small-text">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
-            <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <p class="q8__title middle-box">ー middle ー</p>
+            <div class="btn-co middle-text">common</div>
+            <div class="btn-er middle-text">error</div>
+            <div class="btn-di middle-text">disabled</div>
+            <div class="btn-sh middle-text">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
-            <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <p class="q8__title large-box">ー large ー</p>
+            <div class="btn-co large-text">common</div>
+            <div class="btn-er large-text">error</div>
+            <div class="btn-di large-text">disabled</div>
+            <div class="btn-sh large-text">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -62,17 +62,29 @@
           </h3>
           <!--
                Webサイトを作る際、コンタクトフォームを実装する機会がとても多くあります。
-               ここで使われるタグは一般的にはデザインするのが難しいと言われていますが、それをやらないといけない状況は結構多いです。（簡単リセットされない、:focusや:activeを使う）
+               ここで使われるタグは一般的にはデザインするのが難しいと言われていますが、
+               それをやらないといけない状況は結構多いです。（簡単にリセットされない、:focusや:activeを使う）
                まずは元々タグにあてられているスタイルを解除して、フラットな状態にしてからスタイルを当てていくことが大事です。
 
                特にradioとcheckboxのチェックのスタイルが難しいと思います。
-               やり方として、既存のチェックは使わずに擬似要素でチェックのフィールドを再現します。:checkedを使えばチェックされているかどうかでスタイルを変えることができるので、これをうまく使いましょう。cssでは+（隣接セレクタ）というものも使わなくてはなりませんので、調べてみましょう。
-               また、一番下のボタンはbuttonタグを使って実装しましょう。（<input type="submit">を使って実装することも可能です）
+               やり方として、既存のチェックは使わずに擬似要素でチェックのフィールドを再現します。
+               :checkedを使えばチェックされているかどうかでスタイルを変えることができるので、これをうまく使いましょう。
+               cssでは+（隣接セレクタ）というものも使わなくてはなりませんので、調べてみましょう。
+               また、一番下のボタンはbuttonタグを使って実装しましょう。
+               （<input type="submit">を使って実装することも可能です）
 
-               この課題では、実際にユーザーが入力した値を送れる状態まで作っていただきます。answerの方で確認していただきたいのですが、全ての入力フォームを適当に記述してsubmitボタンを押してみてください。URL欄の最後に「?name=...」という感じの文字列が追加されているのがわかると思います。（その?以降のものをパラメーターと呼びます。複数ある場合は?◯◯=□□&△△=××のように&繋ぎになります。◯◯や△△の部分はinputタグやselectタグのname属性が入ります。）
-               これが、入力した値を送信できている状態です。本来ではこの値をサーバーサイドで受け取ってフォームの処理をするのですが、今回はHTMLを使って送信するまでをやってもらいます。
-               answerで入力した値を自分で作ったフォームに全く同じように入力した場合、URLが全く同じように変わる状態にしてください。（formのaction属性やmethod属性が関係してきます）
-               また赤の*(アスタリスク)の部分は必須項目です。必須項目を空にしたまま送信しようとするとアラートが表示される処理も再現しましょう。
+               この課題では、実際にユーザーが入力した値を送れる状態まで作っていただきます。
+               answerの方で確認していただきたいのですが、全ての入力フォームを適当に記述してsubmitボタンを押してみてください。
+               URL欄の最後に「?name=...」という感じの文字列が追加されているのがわかると思います。
+               （その?以降のものをパラメーターと呼びます。
+               複数ある場合は?◯◯=□□&△△=××のように&繋ぎになります。◯◯や△△の部分はinputタグやselectタグのname属性が入ります。）
+               これが、入力した値を送信できている状態です。
+               本来ではこの値をサーバーサイドで受け取ってフォームの処理をするのですが、
+               今回はHTMLを使って送信するまでをやってもらいます。
+               answerで入力した値を自分で作ったフォームに全く同じように入力した場合、
+               URLが全く同じように変わる状態にしてください。（formのaction属性やmethod属性が関係してきます）
+               また赤の*(アスタリスク)の部分は必須項目です。
+               必須項目を空にしたまま送信しようとするとアラートが表示される処理も再現しましょう。
 
                また、この問題はレイアウトが複雑なため、サイズや色の確認のためにデベロッパーツールを見ても構いません。
                ただ全ての答えを見るといったことはしないようにしましょう。
@@ -99,7 +111,82 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+            <form class="form">
+              <div class="header-title">
+                <p class="header-title-text">Form Exercise</p>
+              </div>
+
+
+              <div class="clearfix">
+
+                <div class="left-manu">
+                  <ul class="main-items">
+                    <li class="clearfix">
+                      <p class="item-title">名前<span class="red-point">*</span></p>
+                      <div class="main-content">
+                        <input class="input-form input--init" type="text" name="name">
+                      </div>
+                    </li>
+
+                    <li class="clearfix">
+                      <p class="item-title">性別</p>
+                      <div class="main-content">
+                        <label class="radio">
+                          <input class="radio-btn" type="radio" name="gender" value="male">
+                          <span class="radio-text">男性</span>
+                        </label>
+                        <label class="radio">
+                          <input class="radio-btn" type="radio" name="gender" value="female">
+                          <span class="radio-text">女性</span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <li class="clearfix">
+                      <p class="item-title">出身</p>
+                      <div class="main-content">
+                        <select name="hometwon" class="select-body input--init">
+                          <option value="tokyo">東京</option>
+                          <option value="saitama">埼玉</option>
+                          <option value="chiba">千葉</option>
+                          <option value="kanagawa">神奈川</option>
+                        </select>
+                      </div>
+                    </li>  
+
+                    <li class="clearfix">
+                     <p class="item-title">Eメール<span class="red-point">*</span></p>
+                     <div class="main-content">
+                       <input class="input-form input--init" type="email" placeholder="ex) hoge@gmail.com" name="email" required>
+                     </div>
+                    </li>
+
+                    <li class="clearfix">
+                      <p class="item-title">電話番号</p>
+                      <div class="main-content">
+                       <input class="input-form input--init" type="text" name="tel" placeholder="ex) 08012345678">
+                      </div>
+                    </li> 
+
+                    <li class="clearfix">
+                      <div class="check-box">
+                        <input class="check-box-btn" id="check-box" type="checkbox" name="twenty" value="true">
+                        <label for="check-box" class="check-box-text">20歳以上です
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="main-bottom">
+                    <button class="main-bottom-btn input--init" type="submit">送信</button>
+                  </div>
+                </div>
+
+                
+                <div class="side">
+                  <textarea class="side-text input--init" name="message" placeholder="何かあれば入力してください。"></textarea>
+                </div>
+              </div>
+            </form>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
